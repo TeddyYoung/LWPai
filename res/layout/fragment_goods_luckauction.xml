@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llytBotton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/deepengray"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdoBtnOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/goods_luck_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="查看往期\n结束商品"
+                android:textColor="@drawable/goods_luck_tv"
+                android:textSize="@dimen/font_12" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/goods_luck_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="加载中\n竞拍进行"
+                android:textColor="@drawable/goods_luck_tv"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/goods_luck_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="加载中\n竞拍进行"
+                android:textColor="@drawable/goods_luck_tv"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/goods_luck_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="加载中\n竞拍进行"
+                android:textColor="@drawable/goods_luck_tv"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/goods_luck_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="加载中\n即将开始"
+                android:textColor="@drawable/goods_luck_tv"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null" >
+
+        <LinearLayout
+            android:id="@+id/llytHeadAd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/goods_headimg"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical" >
+
+                <View
+                    style="@style/div_ver"
+                    android:layout_width="3dp"
+                    android:background="@color/btn_orange" />
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvReceiveRed"
+                    android:layout_alignBottom="@+id/tvReceiveRed"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="距离本次结束:01:11:23"
+                    android:textSize="@dimen/font_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvReceiveRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="领取红包免费竞拍"
+                    android:textColor="@color/btn_orange"
+                    android:textSize="@dimen/font_12" />
+            </RelativeLayout>
+
+            <View style="@style/div_hor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_bottom_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/goods_sanjiao" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/goods_sanjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/goods_sanjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/goods_sanjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/goods_sanjiao"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.yfzx.library.widget.xlistview.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </com.yfzx.library.widget.xlistview.XListView>
+
+</LinearLayout>

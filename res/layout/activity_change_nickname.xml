@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <View style="@style/div_hor" />
+
+    <LinearLayout
+        style="@style/column_high"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/etNickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="西门吹雪"
+            android:textSize="@dimen/font_16" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:padding="5dp"
+            android:src="@drawable/tanchu_close" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aboutlength"
+        android:layout_marginRight="@dimen/aboutlength"
+        android:layout_marginTop="13dp"
+        android:text="4-20个字符，可有中英文、数字、“_”、“-”组成"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

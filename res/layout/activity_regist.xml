@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_iti" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/textview_border"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvTelphone"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="手机号:"
+                android:textSize="@dimen/font_14" />
+
+            <EditText
+                android:id="@+id/edtTxtRegTelphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入您的手机号码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_46"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="验证码:"
+                android:textSize="@dimen/font_14" />
+
+            <EditText
+                android:id="@+id/edtTxtRegCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="6位验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" />
+
+            <Button
+                android:id="@+id/btnVerification"
+                style="@style/comm_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_46"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvRegPassword"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="设置密码:"
+                android:textSize="@dimen/font_14" />
+
+            <EditText
+                android:id="@+id/edtTxtRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_46"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvRegRepassword"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="确认密码:" />
+
+            <EditText
+                android:id="@+id/edtTxtRegRepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/chkRegAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox"
+            android:checked="true"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="本人已阅读、理解并同意本站的"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tvRegAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="《会员注册协议》"
+            android:textColor="@color/btn_orange"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegist"
+        style="@style/comm_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="同一以上协议并注册" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tvRegUserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="已注册用户请登录"
+            android:textColor="@color/fontgray"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>

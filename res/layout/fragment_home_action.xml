@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llytBotton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvLuckAuction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="幸运拍"
+            android:textColor="@color/include_title" />
+
+        <TextView
+            android:id="@+id/tvRedPacket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="红包区" />
+
+        <TextView
+            android:id="@+id/tvOneYuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一元拍" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.1dip"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/div_hor"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivLineLuck"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:scaleType="matrix"
+                android:src="@color/btn_orange" />
+
+            <ImageView
+                android:id="@+id/ivLineRed"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:scaleType="matrix"
+                android:src="@color/btn_orange"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivLineOneYuan"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:scaleType="matrix"
+                android:src="@color/btn_orange"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

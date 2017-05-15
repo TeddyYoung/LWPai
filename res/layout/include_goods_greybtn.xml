@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvGoodsLogin"
+            style="@style/goods_gray_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="登入以查看我的幸运号码~" />
+
+        <com.yfzx.lwpai.view.AutoTextView
+            android:id="@+id/tvLuckyNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您还未购买或幸运码未生成"
+            android:textColor="@color/darkgray"
+            android:textSize="12dp"
+            android:visibility="gone" >
+        </com.yfzx.lwpai.view.AutoTextView>
+    </LinearLayout>
+
+</LinearLayout>

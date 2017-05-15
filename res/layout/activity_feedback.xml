@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border" >
+
+            <EditText
+                android:id="@+id/edtTxtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入反馈意见，我们将会拼命改进的。"
+                android:lines="8"
+                android:maxLines="8"
+                android:padding="8dp"
+                android:textSize="@dimen/font_12" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivAddImg"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/personal_75" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border" >
+
+        <EditText
+            android:id="@+id/edtTxtContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入您的手机号/邮箱"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="@dimen/font_12" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/comm_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:text="保存" />
+
+</LinearLayout>

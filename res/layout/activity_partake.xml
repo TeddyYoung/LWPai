@@ -1,0 +1,477 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llytEnpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llytContent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llytContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bggray"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="参与出价"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/tanchu_close" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/llytRedBag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="请输入购买组数"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvRedReduce"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edtTxtRedNum"
+                        android:layout_width="60dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:id="@+id/tvRedAdd"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="本商品总限购50组"
+                    android:textSize="@dimen/font_10" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="使用红包"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ad_spinner_default_holo_light"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvRedMoney"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="红包金额" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llytOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="请输入购买组数"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tvOneReduce"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/edtTxtOneNum"
+                            android:layout_width="60dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:text="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:id="@+id/tvOneAdd"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtTxtOneTrandPwd"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center_vertical"
+                        android:hint="请输入交易密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="本商品总限购10000组"
+                        android:textSize="@dimen/font_10" />
+
+                    <TextView
+                        android:id="@+id/tvOneForget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="忘记交易密码？"
+                        android:textColor="@color/btn_orange"
+                        android:textSize="@dimen/font_10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="快捷购买"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="5组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="10组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="20组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="30组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="40组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="50组"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llytLuck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="请输入购买组数"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tvLuckReduce"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/edtTxtLuckNum"
+                            android:layout_width="60dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:id="@+id/tvLuckAdd"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtTxtLuckTrandPwd"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center_vertical"
+                        android:hint="请输入交易密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="本商品总限购10000组"
+                        android:textSize="@dimen/font_10" />
+
+                    <TextView
+                        android:id="@+id/tvLuckForget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="忘记交易密码？"
+                        android:textColor="@color/btn_orange"
+                        android:textSize="@dimen/font_10" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View style="@style/div_hor" />
+
+            <Button
+                android:id="@+id/btnBidders"
+                style="@style/comm_small_btn"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="参与竞拍"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

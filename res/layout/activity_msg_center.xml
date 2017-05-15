@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <View style="@style/div_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvNumOne"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/tv_fillet_orange"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:text="公告消息"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <View
+        style="@style/div_hor"
+        android:layout_width="match_parent" />
+
+    <com.yfzx.library.widget.xlistview.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:divider="@null"
+        android:listSelector="@null" >
+    </com.yfzx.library.widget.xlistview.XListView>
+
+</LinearLayout>

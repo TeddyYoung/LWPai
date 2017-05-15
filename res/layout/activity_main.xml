@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/flytContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llytBotton" />
+
+    <LinearLayout
+        android:id="@+id/llytBotton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_55"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f8"
+        android:orientation="vertical" >
+
+        <View style="@style/div_hor" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdoBtnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/bottom_home"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_3"
+                android:paddingTop="@dimen/margin_3"
+                android:text="首页"
+                android:textColor="@drawable/bottom_txtcolor"
+                android:textSize="@dimen/bottom_font" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bottom_share"
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_3"
+                android:text="商品分类"
+                android:textColor="@drawable/bottom_txtcolor"
+                android:textSize="@dimen/bottom_font" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bottom_latest"
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_3"
+                android:text="最新揭晓"
+                android:textColor="@drawable/bottom_txtcolor"
+                android:textSize="@dimen/bottom_font" />
+
+            <RadioButton
+                android:id="@+id/rdoBtnMine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bottom_mine"
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_3"
+                android:text="我的乐拍"
+                android:textColor="@drawable/bottom_txtcolor"
+                android:textSize="@dimen/bottom_font" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

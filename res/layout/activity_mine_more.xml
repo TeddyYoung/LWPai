@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llNickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="设置地理位置信息" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <!-- <View style="@style/div_hor" /> -->
+
+                <LinearLayout
+                    android:id="@+id/llHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="使用帮助" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <View style="@style/div_hor" />
+
+                <LinearLayout
+                    android:id="@+id/llFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvFeedback"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="意见反馈" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <View style="@style/div_hor" />
+
+                <LinearLayout
+                    android:id="@+id/llDatebirth"
+                    style="@style/column_high"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2G/3G网络手动下载图片" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    style="@style/column_high"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="WIFI环境下自动升级客户端" />
+
+                    <CheckBox
+                        android:id="@+id/auto_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/rdobtn_set" />
+                </LinearLayout>
+
+                <View style="@style/div_hor" />
+
+                <LinearLayout
+                    android:id="@+id/llytCleanCache"
+                    style="@style/column_high"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清除本地缓存" />
+
+                    <TextView
+                        android:id="@+id/tvCacheSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_4"
+                        android:text="4.96M"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llSite"
+                    style="@style/column_high"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关于" />
+
+                    <TextView
+                        android:id="@+id/tvVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_4"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="v1.0.0"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <View style="@style/div_hor" />
+
+                <LinearLayout
+                    android:id="@+id/llSecurity"
+                    style="@style/column_high"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/aboutlength"
+                    android:layout_marginRight="@dimen/aboutlength"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvSecurity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="检查更新" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnExit"
+                style="@style/comm_btn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_46"
+                android:text="退出登录" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llytBotton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rdoBtnAll"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnDelivery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待发货"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnReceipt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待收货"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待晒单"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/div_hor"
+                android:layout_height="0.5dip" />
+
+            <ImageView
+                android:id="@+id/ivBottomShare"
+                android:layout_width="100dip"
+                android:layout_height="0.5dip"
+                android:scaleType="matrix"
+                android:src="@color/btn_orange" />
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpMyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

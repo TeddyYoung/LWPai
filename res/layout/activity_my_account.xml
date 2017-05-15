@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+        <View style="@style/div_hor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llHeadPortrait"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvHeadPortrait"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/ivHeadPortrait"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="@dimen/margin_8" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View
+            style="@style/div_hor"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength" />
+
+        <LinearLayout
+            android:id="@+id/llUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            style="@style/div_hor"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength" />
+
+        <LinearLayout
+            android:id="@+id/llNickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/tvNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View
+            style="@style/div_hor"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength" />
+
+        <LinearLayout
+            android:id="@+id/llSex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tvSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:text="保密"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View
+            style="@style/div_hor"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength" />
+
+        <LinearLayout
+            android:id="@+id/llDatebirth"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="出生日期" />
+
+            <TextView
+                android:id="@+id/tvDatebirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:text="未设置"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llSite"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvSite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="地址管理" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View
+            style="@style/div_hor"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength" />
+
+        <LinearLayout
+            android:id="@+id/llSecurity"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号安全" />
+
+            <TextView
+                android:id="@+id/tvSecu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:text="可修改密码"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCode"
+        style="@style/column_high"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_weight="1"
+            android:text="我的二维码名片" />
+
+        <ImageView
+            android:id="@+id/ivCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:src="@drawable/bottom_tab_sd" />
+
+        <ImageView
+            android:id="@+id/imageViewsd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+</LinearLayout>

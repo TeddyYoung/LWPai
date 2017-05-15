@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- 新增配置 -->
+
+
+    <!-- 字体大小 -->
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_8">8sp</dimen>
+
+    <!-- 间距大小 -->
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_46">46dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+
+    <!-- 左右宽度 -->
+    <dimen name="aboutlength">12dp</dimen>
+    <!-- 底部栏 -->
+    <dimen name="bottom_55">55dp</dimen>
+    <dimen name="bottom_font">10sp</dimen>
+
+    <!-- 顶部栏 -->
+    <dimen name="head_50">50dp</dimen>
+
+    <!-- Item的高度 -->
+    <dimen name="item_48">48dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="font_small">14sp</dimen>
+
+</resources>

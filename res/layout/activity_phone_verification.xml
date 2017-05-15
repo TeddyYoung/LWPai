@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_iti" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvTe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="请输入验证手机号码"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/textview_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvTelphone"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="手机号:"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtTxtRegTelphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入您的手机号码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <View style="@style/div_hor" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_46"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvCode"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="验证码:"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtTxtRegCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="6位验证码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14" />
+
+                <Button
+                    android:id="@+id/btnVerification"
+                    style="@style/comm_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:text="获取短信验证码"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llqiehuan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2" />
+
+                    <ImageView
+                        android:id="@+id/ivAuthentication"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/login_gray1" />
+
+                    <View
+                        android:id="@+id/view1"
+                        style="@style/div_hor"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvAuthentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="身份验证" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <View
+                            android:id="@+id/view2"
+                            style="@style/div_hor"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2" />
+
+                        <ImageView
+                            android:id="@+id/ivAlter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/login_gray2" />
+
+                        <View
+                            android:id="@+id/view3"
+                            style="@style/div_hor"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvAlter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="修改手机验证" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/div_hor" />
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        style="@style/left_right_margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.3"
+                android:text="请输入验证手机号码"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etPhoneCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:background="@null"
+                android:hint="验证手机号"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" />
+
+            <Button
+                android:id="@+id/btnCode"
+                style="@style/comm_btn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="获取短信验证码"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="短信验证码"
+                android:maxLength="6"
+                android:numeric="integer"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTwo"
+        style="@style/left_right_margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.3"
+                android:text="请输入新手机号码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etNewPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="验证手机号码"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvNewPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btnCode1"
+                style="@style/comm_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="获取短信验证码"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etCode2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2.7"
+                android:background="@null"
+                android:ems="10"
+                android:hint="短信验证码"
+                android:maxLength="6"
+                android:numeric="integer"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegist"
+        style="@style/comm_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="确认修改" />
+
+</LinearLayout>

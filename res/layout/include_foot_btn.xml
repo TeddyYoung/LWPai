@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_Bidders"
+        style="@style/comm_btn"
+        android:layout_height="35dp"
+        android:layout_width="150dp"
+        android:text="参与竞拍" />
+
+</LinearLayout>

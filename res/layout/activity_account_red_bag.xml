@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llytBotton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rdoBtnAll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rdo_shape_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="可使用"
+                    android:textColor="@drawable/red_bag_color"
+                    android:textSize="@dimen/font_14" />
+
+                <View style="@style/div_ver" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnDelivery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rdo_shape_center"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="已用完"
+                    android:textColor="@drawable/red_bag_color"
+                    android:textSize="@dimen/font_14" />
+
+                <View style="@style/div_ver" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnReceipt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rdo_shape_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="已过期"
+                    android:textColor="@drawable/red_bag_color"
+                    android:textSize="@dimen/font_14" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpMyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

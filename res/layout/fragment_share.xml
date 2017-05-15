@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llytBotton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rdoBtnNewest"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="最新"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnEssence"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="精华"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnRecommend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+
+                <RadioButton
+                    android:id="@+id/rdoBtnPopular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="人气"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/font_14" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/vdiv"
+                style="@style/div_hor"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <ImageView
+                android:id="@+id/ivBottomLine"
+                android:layout_width="100dp"
+                android:layout_height="0.5dp"
+                android:scaleType="matrix"
+                android:src="@color/btn_orange" />
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

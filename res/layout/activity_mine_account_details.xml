@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/llytAccountBalance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账户余额" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_4"
+                android:text="5000"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/llytRechargeRecord "
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="充值记录" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/llytCashWithdrawal"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提现金额" />
+
+            <TextView
+                android:id="@+id/tvRemind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_4"
+                android:text="2000"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/llytRedBag"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的红包" />
+
+            <TextView
+                android:id="@+id/tvRedBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_4"
+                android:text="200"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+
+        <LinearLayout
+            android:id="@+id/llytMyPoints"
+            style="@style/column_high"
+            android:layout_marginLeft="@dimen/aboutlength"
+            android:layout_marginRight="@dimen/aboutlength"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的积分" />
+
+            <TextView
+                android:id="@+id/tvIntegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_4"
+                android:text="50"
+                android:textColor="@color/darkgray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View style="@style/div_hor" />
+    </LinearLayout>
+
+</LinearLayout>

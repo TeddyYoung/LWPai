@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/head_50"
+    android:background="@color/include_title" >
+    
+     <ImageView
+         android:id="@+id/ivRegBack"
+         android:layout_width="40dp"
+         android:layout_height="20dp"
+         android:layout_marginLeft="3dp"
+         android:layout_marginTop="15dp"
+         android:src="@drawable/top_back" />
+     
+     <TextView
+         android:id="@+id/tvRegTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="用户注册"
+         android:textColor="@color/white"
+         android:textSize="@dimen/font_22" />
+
+</RelativeLayout>

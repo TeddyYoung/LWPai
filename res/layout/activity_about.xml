@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_iti" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_46" >
+
+            <ImageView
+                android:layout_width="165dp"
+                android:layout_height="82dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue" />
+
+            <TextView
+                android:id="@+id/tvVersionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_marginTop="8dp"
+                android:text="For Android V1.0.0"
+                android:textColor="@color/base_color_text_gray"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:id="@+id/ivQRcode"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="扫描二维码，下载乐网拍手机客户端"
+                android:textColor="@color/base_color_text_gray"
+                android:textSize="@dimen/font_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="@dimen/margin_46"
+                android:layout_marginRight="@dimen/margin_46"
+                android:layout_marginTop="64dp"
+                android:background="@color/bottom_div_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Copyright 2012-2015"
+                android:textColor="@color/base_color_text_gray"
+                android:textSize="@dimen/font_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乐网拍 版权所有"
+                android:textColor="@color/base_color_text_gray"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head_itt" />
+
+    <View style="@style/div_hor" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fdbc00"
+                    android:padding="13dp"
+                    android:text="@string/recharge"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="17dp"
+                    android:text="请选择充值金额（元）"
+                    android:textSize="@dimen/font_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="20"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="50"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn100"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="100"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn200"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="200"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtn500"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rdo_border"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="500"
+                        android:textColor="@drawable/rdo_text_color"
+                        android:textSize="@dimen/font_10" />
+
+                    <EditText
+                        android:id="@+id/edtTxtOtherMoney"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="其他金额"
+                        android:inputType="number"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_10" />
+                </LinearLayout>
+
+                <View
+                    style="@style/div_hor"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="17dp"
+                    android:text="请选择支付方式"
+                    android:textSize="@dimen/font_16" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="微信支付"
+                        android:textSize="@dimen/font_12"
+                        android:visibility="gone" />
+
+                    <View
+                        style="@style/div_hor"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="国富宝"
+                        android:textSize="@dimen/font_12"
+                        android:visibility="gone" />
+
+                    <View
+                        style="@style/div_hor"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="支付宝"
+                        android:textSize="@dimen/font_12" />
+                </RadioGroup>
+
+                <View
+                    style="@style/div_hor"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRecharge"
+                style="@style/comm_btn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="28dp"
+                android:text="立即充值" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
